@@ -13,12 +13,14 @@ function setup() {
   engine = Engine.create()
   world = engine.world
 
-  ground = new Ground(400, 350, 280, 100)
-  domino1 = new Domino(320, 280, 50)
-  domino2 = new Domino(360, 280, 80)
+  ground = new Ground(400, 350, 300, 100)
+
+  domino1 = new Domino(320, 280, 170)
+  domino2 = new Domino(360, 280, 140)
   domino3 = new Domino(400, 280, 110)
-  domino4 = new Domino(440, 280, 140)
-  domino5 = new Domino(480, 280, 170)
+  domino4 = new Domino(440, 280, 80)
+  domino5 = new Domino(480, 280, 50)
+  domino6 = new Domino(520,280,25)
 
   mover = new Mover(20,20)
  }
@@ -34,6 +36,7 @@ function draw() {
   domino4.display()
   domino5.display()
   mover.display()
+  domino6.display()
 
   drawSprites();
 }
